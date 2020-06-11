@@ -14,17 +14,17 @@ PREV_REPLY_MESSAGE = {}
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Set ALIVE_NAME in config vars in Heroku"
 REDIRECTCHANNELS = str(REDIRECTCHANNEL) 
 USER_BOT_WARN_ZERO = "`You were spamming my peru master's inbox, henceforth your retarded lame ass has been blocked by my master's userbot.` "
-USER_BOT_NO_WARN = ("""
-                        This is automated message
+USER_BOT_NO_WARN = (
+                        "\n\t This is automated message \n"
                     
-                    My master hasn't approved you to PM
-                    Please wait for my master to look in
-                           he mostly approves PMs
+                    "My master hasn't approved you to PM \n"
+                    "Please wait for my master to look in \n"
+                           "\t he mostly approves PMs \n\n"
                            
-                    <strong>DON'T SPAM UNTILL THEN</strong>
+                   "\t DON'T SPAM UNTILL THEN \n\n"
                     
-                    Send `/start` to start a valid conversation
-                   """)
+                    "Send `/start` to start a valid conversation"
+                   )
 
 
 if Var.PRIVATE_GROUP_ID is not None:
