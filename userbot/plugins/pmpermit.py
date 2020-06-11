@@ -15,13 +15,13 @@ DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Set ALIVE_NAME in config vars 
 REDIRECTCHANNELS = str(REDIRECTCHANNEL) 
 USER_BOT_WARN_ZERO = "`You were spamming my peru master's inbox, henceforth your retarded lame ass has been blocked by my master's userbot.` "
 USER_BOT_NO_WARN = (
-                        "\n\t This is automated message \n"
+                        "   `This is automated message` \n\n"
                     
                     "My master hasn't approved you to PM \n"
-                    "Please wait for my master to look in \n"
-                           "\t he mostly approves PMs \n\n"
+                    " Please wait for my master to look in \n"
+                           "      he mostly approves PMs \n\n"
                            
-                   "\t DON'T SPAM UNTILL THEN \n\n"
+                   "     DON'T SPAM UNTILL THEN \n\n"
                     
                     "Send `/start` to start a valid conversation"
                    )
