@@ -1,6 +1,6 @@
 """Available Commands:
 .tlol
-.eol
+.elol
 .candy
 .nothappy"""
 
@@ -39,7 +39,7 @@ async def _(event):
 		await event.edit("".join(deq))
 		deq.rotate(1)
     
-@borg.on(admin_cmd(pattern=r"lol"))
+@borg.on(admin_cmd(pattern=r"elol"))
 async def _(event):
 	if event.fwd_from:
 		return
