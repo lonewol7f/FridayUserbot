@@ -84,7 +84,7 @@ async def bluedevilhello(hello):
     await hello.edit(H)
 @borg.on(admin_cmd(pattern=r"tank"))
 async def bluedeviltank(tank):
-    await hello.edit(T)
+    await tank.edit(T)
 
 
 @borg.on(admin_cmd("bigoof"))
