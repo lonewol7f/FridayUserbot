@@ -1,21 +1,19 @@
-"""Enable Seen Counter in any message, Fix by @pureindialover
+"""Enable Seen Counter in any message,
 to know how many users have seen your message
 Syntax: .fwd as reply to any message"""
 from telethon import events
-from telethon import sync
-from telethon.tl import types, functions
-from userbot.utils import admin_cmd
+from userbot.util import admin_cmd
 
 
-@borg.on(admin_cmd(pattern="frwd"))
+@borg.on(admin_cmd(pattern="fwd"))
 async def _(event):
     if event.fwd_from:
         return
-    if Config.PLUGIN_CHANNEL is None:
-        await event.edit("Please set the required environment variable `PLUGIN_CHANNEL` for this plugin to work")
+    if Config.PRIVATE_CHANNEL_BOT_API_ID is None:
+        await event.edit("Please set the required environment variable `PRIVATE_CHANNEL_BOT_API_ID` for this plugin to work")
         return
     try:
-        e = await borg.get_entity(Config.PLUGIN_CHANNEL)
+        e = await borg.get_entity(Config.PRIVATE_CHANNEL_BOT_API_ID)
     except Exception as e:
         await event.edit(str(e))
     else:
