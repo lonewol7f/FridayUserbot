@@ -64,6 +64,15 @@ T = ("░░░░░░███████ ]▄▄▄▄▄▄▄▄\n"
 "  ▂▄▅█████████▅▄▃▂\n"
 " ███████████████████\n"
 "   ◥⊙▲⊙▲⊙▲⊙▲⊙▲⊙▲⊙◤\n")
+C = ("─▀▀▀▀▀▀▀▀▀▄▄▀▀▀▀▀▀▀▀▀\n"
+"─────────█▀▀█\n"
+"────────█▓▓▓▓█\n"
+"────══▄▀█▓▓▓▓█▀▄══\n"
+"─▄▄▄▄▄▄██▓▓▓▓██▄▄▄▄▄▄\n"
+"─█▀▀▀█▀██▄▓▓▄██▀█▀▀▀█\n"
+"▄█▄─▄█▄──▀██▀──▄█▄─▄█▄\n"
+"█▒█─█▒█────────█▒█─█▒█\n"
+"▀▀▀─▀▀▀────────▀▀▀─▀▀▀\n")
 @borg.on(admin_cmd(pattern=r"monster"))
 async def bluedevilmonster(monster):
     await monster.edit(M)
@@ -85,6 +94,9 @@ async def bluedevilhello(hello):
 @borg.on(admin_cmd(pattern=r"tank"))
 async def bluedeviltank(tank):
     await tank.edit(T)
+@borg.on(admin_cmd(pattern=r"heli"))
+async def bluedevilheli(heli):
+    await heli.edit(C)
 
 
 @borg.on(admin_cmd("bigoof"))
