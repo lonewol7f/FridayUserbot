@@ -2,18 +2,18 @@
 to know how many users have seen your message
 Syntax: .fwd as reply to any message"""
 from telethon import events
-from userbot.utils import admin_cmd
+from uniborg.util import admin_cmd
 
 
 @borg.on(admin_cmd(pattern="fwd"))
 async def _(event):
     if event.fwd_from:
         return
-    if Config.PRIVATE_CHANNEL_BOT_API_ID is None:
-        await event.edit("Please set the required environment variable `PRIVATE_CHANNEL_BOT_API_ID` for this plugin to work")
+    if Config.PLUGIN_CHANNEL is None:
+        await event.edit("Please set the required environment variable `PLUGIN_CHANNEL` for this plugin to work")
         return
     try:
-        e = await borg.get_entity(Config.PRIVATE_CHANNEL_BOT_API_ID)
+        e = await borg.get_entity(Config.PLUGIN_CHANNEL)
     except Exception as e:
         await event.edit(str(e))
     else:
