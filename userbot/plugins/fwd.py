@@ -2,7 +2,7 @@
 to know how many users have seen your message
 Syntax: .fwd as reply to any message"""
 from telethon import events
-from userbot.util import admin_cmd
+from userbot.utils import admin_cmd
 
 
 @borg.on(admin_cmd(pattern="fwd"))
