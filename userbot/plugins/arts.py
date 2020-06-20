@@ -73,6 +73,61 @@ C = ("─▀▀▀▀▀▀▀▀▀▄▄▀▀▀▀▀▀▀▀▀\n"
 "▄█▄─▄█▄──▀██▀──▄█▄─▄█▄\n"
 "█▒█─█▒█────────█▒█─█▒█\n"
 "▀▀▀─▀▀▀────────▀▀▀─▀▀▀\n")
+SH = (" ▬▬▬.◙.▬▬▬\n"
+"═▂▄▄▓▄▄▂\n"
+"◢◤ █▀▀████▄▄▄▄▄▄◢◤\n"
+"█▄ █ :) ██▀▀▀▀▀▀▀╬\n"
+"◥█████◤\n"
+"══╩══╩══\n")
+SM = ("_̅┌─_̅(̲̲(̅_̅_̲̅м̲̅a̲̅я̲̅i̲̅j­­u̲̅a̲̅n̲̅a̲̅_̅_̅_̅()ڪے\n"
+"　│▒│ /▒/\n"
+"　│▒│/▒/\n"
+"　│▒ /▒/─┬─┐\n"
+"　│▒│▒|▒│▒│\n"
+"┌┴─┴─┐-┘─┘\n"
+"│▒┌──┘▒▒▒│\n"
+"└┐▒▒▒▒▒▒┌┘\n"
+"　└┐▒▒▒▒┌┘\n")
+S = ("▄▄▀█▄───▄───────▄\n"
+"▀▀▀██──███─────███\n"
+"░▄██▀░█████░░░█████░░\n"
+"███▀▄███░███░███░███░▄\n"
+"▀█████▀░░░▀███▀░░░▀██▀\n")
+TR = ("┈┈┈▂▂▂▂▂▂▂\n"
+"┈┈╱▂▂▂▂▂▂╱┈┈▂\n"
+"┈▕▕╲╲▉▉▉▕▂▂▂▊▂\n"
+"┈▕▕╲╲▉▉▉╱╱╱╭╮╭╲\n"
+"┈▕┈▔▔▏┈▕▔▔▏┃▋┃▋▏\n"
+"┈╱▔╲┈▏┈▕╱▔╲╲▂▂╱▏\n"
+"▕╭╮▕▅▅▅▅╭╮▕▃▃▃▃▏\n"
+"┈╲▂╱╲▂╱┈╲▂╱╲▂╱\n")
+A = ("▇▇▇◤▔▔▔▔▔▔▔◥▇▇▇\n"
+"▇▇▇▏◥▇◣┊◢▇◤▕▇▇▇\n"
+"▇▇▇▏▃▆▅▎▅▆▃▕▇▇▇\n"
+"▇▇▇▏╱▔▕▎▔▔╲▕▇▇▇\n"
+"▇▇▇◣◣▃▅▎▅▃◢◢▇▇▇\n"
+"▇▇▇▇◣◥▅▅▅◤◢▇▇▇▇\n"
+"▇▇▇▇▇◣╲▇╱◢▇▇▇▇▇\n"
+"▇▇▇▇▇▇◣▇◢▇▇▇▇▇▇\n")
+DY = ("───────────████████──\n"
+"──────────███▄███████\n"
+"──────────███████████\n"
+"──────────███████████\n"
+"──────────██████─────\n"
+"──────────█████████──\n"
+"█───────███████──────\n"
+"██────████████████───\n"
+"███──██████████──█───\n"
+"███████████████──────\n"
+"███████████████──────\n"
+"─█████████████───────\n"
+"──███████████────────\n"
+"────████████─────────\n"
+"─────███──██─────────\n"
+"─────██────█─────────\n"
+"─────█─────█─────────\n"
+"─────██────██────────\n")
+
 @borg.on(admin_cmd(pattern=r"monster"))
 async def bluedevilmonster(monster):
     await monster.edit(M)
@@ -97,6 +152,24 @@ async def bluedeviltank(tank):
 @borg.on(admin_cmd(pattern=r"heli"))
 async def bluedevilheli(heli):
     await heli.edit(C)
+@borg.on(admin_cmd(pattern=r"sheli"))
+async def bluedevilsheli(sheli):
+    await sheli.edit(SH)
+@borg.on(admin_cmd(pattern=r"smoker"))
+async def bluedevilsmoker(smoker):
+    await smoker.edit(SM)
+@borg.on(admin_cmd(pattern=r"snake"))
+async def bluedevilsnake(snake):
+    await snake.edit(S)
+@borg.on(admin_cmd(pattern=r"train"))
+async def bluedeviltrain(train):
+    await train.edit(TR)
+@borg.on(admin_cmd(pattern=r"annon"))
+async def bluedevilannon(annon):
+    await annon.edit(A)
+@borg.on(admin_cmd(pattern=r"dyno"))
+async def bluedevildyno(dyno):
+    await dyno.edit(DY)
 
 
 @borg.on(admin_cmd("bigoof"))
