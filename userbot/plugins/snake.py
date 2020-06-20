@@ -7,7 +7,7 @@ from uniborg.util import admin_cmd
 
 
 
-@borg.on(admin_cmd(pattern=r"snake"))
+@borg.on(admin_cmd(pattern=r"asnake"))
 
 async def _(event):
 
